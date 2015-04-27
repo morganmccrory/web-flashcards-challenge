@@ -1,0 +1,9 @@
+<p>Hello <%= @user.name %> </p>
+Please choose your deck:
+<br>
+<br>
+<form action="/rounds" method="POST">
+<input type="radio" name="selected_deck"/>  Movies by Main Character
+<br><br>
+<input type="submit" value="Play!" />
+</form>

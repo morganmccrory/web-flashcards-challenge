@@ -1,0 +1,12 @@
+<div class="container">
+  <% if @errors %>
+     <h2 style="color:red"><i>Login failed, try again!</i></h2>
+  <% end %>
+
+  <h1>Welcome to CRUDdy Flashcards</h1>
+  <h3>Please enter your information below to log in.</h3>
+  <form action="/login" method="POST">
+    <%= erb :"users/_form" %>
+  </form>
+  <a href="/users/new">Create New Account</a>
+</div>

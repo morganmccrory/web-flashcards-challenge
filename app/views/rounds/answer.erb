@@ -1,0 +1,14 @@
+<%if @guess.correctness == true%>
+<h1>You got it right!!</h1>
+<h3>Susan congratulates you! Paul doesn't care. Morgan claims she knew it first!</h3>
+<%else%>
+<h1>You suck!!</h1>
+<h3>Susan congratulates you! Paul points and laughs at your failure. Morgan knew the right answer.</h3>
+<%end%>
+<br>
+<%if @cards.empty?%>
+<h3>You've completed your CRUDdy game!!</h3>
+<a href="/rounds/results">Get your results!</a>
+<%else%>
+<a href="/rounds/cards">Get the next question!!</a>
+<%end%>
